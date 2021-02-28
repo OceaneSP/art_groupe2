@@ -1,0 +1,272 @@
+html {
+    height: 100%;
+}
+
+h1{
+  font-family: 'Sofia';
+}
+
+body {
+ font-family: 'Roboto'!important;
+ text-align: center;
+ min-height: 100%;
+}
+
+#header{
+  background-color: #a674b8;
+    height: 200px;
+}
+#bgh{
+  background-color: #a674b8 !important;
+}
+.navbar-text{
+  text-align: center !important;
+  color: #ffffff;
+}
+.bg-light{
+  background-color: #a674b8 !important;
+}
+#main{
+
+  height:100vh !important;
+}
+#sticky-footer{
+  background-color: #a674b8 !important;
+}
+
+
+/* ben
+------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Sidebar/left column */
+
+.side {
+  -ms-flex: 30%;
+  /* IE10 */
+  flex: 30%;
+  padding: 20px;
+}
+
+
+/* Main column */
+
+.main {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
+
+.center {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
+
+
+/* Fake image, just for this example */
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+  .row {
+      flex-direction: column;
+  }
+}
+
+
+/* S L I D E   S H O W */
+
+* {
+  box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+
+/* index
+--------------------------- */
+
+.btn-primary{
+  background-color: #6c3082;
+  border-color: orange;
+  border-radius: 0;
+  width: 250px;
+}
+
+.btn-primary:hover{
+  background-color: #FAFAFA;
+  color:#6c3082;
+  border-color: orange;
+  transition-duration: 0.6s
+}
+
+.btn-secondary{
+  background-color: #6c3082;
+  border-color: orange;
+  width: 100px;
+}
+.btn-secondary:hover{
+  background-color: #FAFAFA;
+  color:#6c3082;
+  border-color: orange;
+  transition-duration: 0.6s
+}
+
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+/* Zoom In #1 */
+img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
